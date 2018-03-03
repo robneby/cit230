@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+
+* {
+  font-family: "Avenir", Helvetica, sans-serif;  
+  margin: 0;
+  padding: 0;
+ }
+
+h1, h2 {
+  background-color: #FFF;
+  color: #248159;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #FFF;
+  color: #67001F;
+}
+
+p {
+  font-weight: normal;
+  font-size: 1.1em;
+  background-color: #FFF;
+  color: #001C10;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/*========= Header Layout ===========*/
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: 74px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*========= Top Navigation Layout ===========*/
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+h2 {
+  padding: 20px;
+  color: #24408e;
+}
+
+.hamburger { 
+    display: flex;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem; 
+}
+
+nav ul {
+  border-top: 1px solid #f28731;
+}
+
+nav li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #f28731;
+}
+
+nav a {
+  color: #f28731;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.topnav { 
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav li { 
+    display: none;
+    padding-left: 20px;
+}
+
+.topnav a:hover {
+    color: #24408e;
+}
+
+
+@media only screen and (max-width: 37.5em) {
+    .topnav.responsive { 
+        position: relative; 
+    }
+    .topnav.responsive li { 
+        display: block; 
+        width: 100%; 
+        margin: 2px 0; 
+    }
+    .topnav.responsive li a {   
+
+        text-align: left;  
+        display: block; 
+        text-decoration:none; 
+    }
+}
+
+.weather-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.main-image {
+  padding-top: 5px;
+  width: 100%;
+}
+
+.main-image img {
+  width: 100%;
+  margin: auto;
+}
+
+.weather-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.main-title {
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.weather-block {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.weather-desc {
+  font-family: 'Courgette', cursive;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature {
+  width: 100%;
+  text-align: center;
+}
+
+.precip-wind {
+  width: 100%;
+  text-align: center;
+}
+
+.weather-data {
+  display: block;
+}
+
+/*========= Forecast Layout ===========*/
+
+.forecast {
+  display: none;
+  margin-top: 5px;
+}
+
+.forecast h3 {
+  border-style: solid solid none solid;
+  text-align: center;
+  border-width: 1px;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.5em;
+  background-color: silver;
+}
+
+.forecast table {
+  border: 1px;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.forecast table th, .forecast table td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 4px;
+  background-color: gainsboro;
+}
+
+/*========= Articles Layout ===========*/
+article {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid;
+  margin-top: 0.5em;
+  padding: 1em;
+}
+
+article h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 5px 15px 5px;
+  width: 100%;
+}
+
+.article-image {
+  width: 100%;
+}
+
+.article-image img {
+  width: 100%;
+  margin: auto;
+}
+
+article p {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/*========= Footer Layout ===========*/
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #f28731;
+  padding: 20px;
+  text-align: center; 
+}
+
+/*========= Gallery Layout ===========*/
+
+.gallery-grid {
+  display: grid;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  grid-template-columns: 1fr;
+  grid-gap: 10px 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  padding: 0;
+}
