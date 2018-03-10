@@ -27,6 +27,17 @@
         width: 225px;
         padding: 20px;
     } 
+.towncond h2 {
+	font-size: 250%;
+	padding-bottom: .5em;
+	margin-top: -.1em;
+}
+
+main .towncond picture img {
+	align-items: flex-start;
+	margin-top: -2.75em;
+	max-width: 100%;
+}
     
 /*========= Gallery Layout ===========*/
 
