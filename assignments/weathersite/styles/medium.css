@@ -14,9 +14,6 @@
         font-size: 2em;
         }
         
-    h3 {
-        color: #12ab4b;
-    }
     
 /*========= Top Navigation Layout ===========*/
         
@@ -36,7 +33,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around; 
-        font-size: .75em;
+        font-size: 1em;
         overflow: hidden; 
         border-top: none; 
         }
@@ -52,12 +49,9 @@
         text-decoration: none;
         }
         
-    .topnav a:hover {   
-        color: #24408e;   
-        }
     
 /*========= Forecast Layout ===========*/
- 
+    
     #forecast {
         display: inline;
     }
@@ -67,12 +61,17 @@
         padding-left: 20px;
     }
     
+    #mainforecast img{
+    padding: 30px;
+}
+    
     #tenday {
         display: flex;
         flex-direction: row;
         justify-content: space-around; 
         padding: 0px 10px 0px 10px;
         margin-top: 10px;
+        margin-bottom: 20px;
     }
     
     #tenday li {
@@ -82,6 +81,37 @@
         padding: 10px;
         background: #24408e;
     }
+
+/*========= Home Page Layout ===========*/
+    
+    #mainArticle {
+      display: flex;
+      flex-direction: row-reverse;
+      }  
+    
+    #mainArticle img {
+        padding-right: 30px;
+        padding-left: 20px;
+    }    
+
+    #cityStats {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: auto;
+    }
+    
+    .cityBlock {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .reverse {
+        flex-direction: row-reverse;
+    }
+    
     
 /*========= Gallery Layout ===========*/
 
@@ -97,4 +127,57 @@
         max-width: 250px;
     }
     
+}
+    .hamburger { 
+        display: none; 
+  }
+        
+
+
+@media only screen and (min-width: 600px) {
+  .display-small {
+    display: none;
+  }
+  .display-medium {
+    display: block;
+  }
+  .display-large {
+    display: none;
+  }   
+
+
+  nav div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    line-height: 1em;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 14px 14px;
+    text-align: center;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }

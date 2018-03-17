@@ -7,12 +7,9 @@
 
 /*========= Header Layout ===========*/
 
-}
-
-header, footer, footer a {
-    text-align: center;
-    background-color: #fff;
-    color: #275698;
+header {
+    display: flex;
+    align-items: center;
 }
 
 header img {
@@ -30,14 +27,19 @@ ul {
 }
 
 h1 {
-  padding-top: 40px;
-  text-transform: uppercase;
-  font-size: 1.5em;
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #24408e;
 }
 
 h2 {
   padding: 20px;
   color: #24408e;
+}
+
+h3 {
+    color: #12ab4b;
 }
 
 .hamburger { 
@@ -79,6 +81,9 @@ nav a {
     color: #24408e;
 }
 
+li.active a {
+    color: #24408e;
+}
 
 @media only screen and (max-width: 37.5em) {
     .topnav.responsive { 
@@ -100,16 +105,15 @@ nav a {
 
 /*====== Temperature Section Layout ========*/
 
+main p {
+    margin-left: 20px;
+}
+
 #mainforecast{
     display: flex;
     flex-direction: row; 
     justify-content: center;
     align-items: center;
-}
-
-#mainforecast img{
-    width: 200px;
-    height: 200px;
 }
 
 #temperatures {
@@ -118,21 +122,25 @@ nav a {
     padding: 20px;
 }
 
+#photo{
+    display: none;
+}
+
 li.label {
   font-weight: bold;
     padding-top: 10px;
 }
 
 #stats p {
-    display: flex;
-    align-items: center;
     font-weight: bold;
-    color: #f28731;
-    padding-left: 20px;
+    background-color: #f28731;
+    color: #fff;
+    padding: 7px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #windchill {
-    
     font-size: 1.5rem;
     padding: 2px;
 }
@@ -159,12 +167,96 @@ text-align: center;
   display: none;
 }
 
+/*========= Home Page Layout ===========*/
+
+#mainArticle {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;  
+}
+
+#mainArticle h2 {
+    padding-left: 0;
+}
+
+#mainArticle img {
+    display: flex;
+    margin: 20px auto 20px auto; 
+}
+
+#cityStats {
+    display: flex;
+    flex-direction: column;
+    padding: 30px; 
+    text-align: center;
+}
+
+#cityStats img {
+    display: flex;
+    margin: 10px auto 40px auto; 
+}
+
+
 /*========= Gallery Layout ===========*/
 
 #galleryImg {
     display: grid;
     grid-template-columns: 1fr;  
     text-align: center;
+}
+
+/*========= Storm Center Form Layout ===========*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 700px;
+    
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid #f28731;
+    border-radius: 10px;
+}
+
+form legend {
+    margin-bottom: -20px;
+}
+
+form span {
+    margin-top: 18px;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea, select {
+    border-radius: 4px;
+    padding: 2px;
+    background-color: #fff2e5 ;
+}
+
+#stormInfo input, select {
+    max-width: 300px;
+}
+
+.submitButton {
+    margin: 20px 0px;
+    background-color: #f28731;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
 }
 
 /*========= Footer Layout ===========*/
@@ -174,35 +266,4 @@ footer {
   border-top: 1px solid #f28731;
   padding: 20px;
   text-align: center; 
-}
-
-
-/*========= Storm Center Form ===========*/
-
-form#stormform {
-    margin: 1em 3%;
-}
-legend {
-    color: blue;
-    font-size: 24px;
-}
-label, #label {
-    display: block;
-    margin: .75em;
-}
-label span {
-    display: block;
-}
-#ratingvalue {
-    display: inline;
-}
-.submitbutton {
-    -webkit-appearance: none;
-    background-color: #f28731;
-    border: solid 2px black;
-    border-radius: 7px;
-    margin: .75em 1.5em;
-    padding: .5em;
-    width: 30%
-
 }

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Franklin City Forecast | Your Weather Forecast</title>
+  <meta name="description" content="current weather info for Franklin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Robert Nebeker">
+  
+    <!-- external style references -->    
+  <link rel="stylesheet" href="styles/normalize.css"> <!-- normalize useragent browser defaults -->
+  <link rel="stylesheet" href="styles/main.css">    <!-- default styles - small/phone views -->
+  <link rel="stylesheet" href="styles/medium.css">  <!-- medium tablet views -->
+  <link rel="stylesheet" href="styles/large.css">  <!-- large wide desktop views -->
+  <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet"> <!-- google fonts views -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+</head>
+
+<body>
+  <header>
+    <img src="images/weatherlogo.jpg" alt="The site logo" width="200" height="100">
+    <h1>Your Weather Forecast</h1>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div class="subheading">Weather you can trust</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+   <nav id="mainNav" >
+      <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+      </ul>		
+  </nav>
+  <main>
+        <div id="mainArticle">
+            <article>
+                <h2>Weather Summary</h2>
+                <p>Be safe out there no matter what the weather condition. Be prepared for Sun, rain, snow and more!!</p>
+            </article>
+                <img src="images/sun.png" alt="Sunny">
+        </div>
+            <section id="mainNews">
+            </section>
+        </main>
+
+
+
+<!--Footer Here-->
+        <footer>
+            <aside>
+                Contact information: <a href="contact@weatherforecast.com">contact@weatherforecast.com</a>
+            </aside>
+      
+            <p>&copy; 2018 All Rights Reserved | Your Weather Forecast | <span id="today"></span></p> 
+        </footer>
+            <script src="scripts/currentDate.js" type="text/javascript"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/towndata.js"></script>
+            <script src="scripts/wayfinder.js"></script>
+</body>
+</html>

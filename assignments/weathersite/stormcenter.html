@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Franklin City Forecast | Your Weather Forecast</title>
+  <meta name="description" content="current weather info for Franklin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Robert Nebeker">
+  
+    <!-- external style references -->    
+  <link rel="stylesheet" href="styles/normalize.css"> <!-- normalize useragent browser defaults -->
+  <link rel="stylesheet" href="styles/main.css">    <!-- default styles - small/phone views -->
+  <link rel="stylesheet" href="styles/medium.css">  <!-- medium tablet views -->
+  <link rel="stylesheet" href="styles/large.css">  <!-- large wide desktop views -->
+  <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet"> <!-- google fonts views -->
+</head>
+
+<body>
+  <header>
+    <img src="images/weatherlogo.jpg" alt="The site logo" width="200" height="100">
+    <h1>Your Weather Forecast</h1>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div class="subheading">Weather you can trust</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+   <nav id="mainNav" >
+      <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+      </ul>		
+  </nav>
+
+<!--Storm Center form-->
+<main>
+    <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormcenter" id="stormform">
+        <fieldset>
+        <legend>Storm Form</legend>
+            <h3>Personal Information</h3>
+            <label><span>Full Name:*</span><input name="fullname" type="text" placeholder="First Last" pattern="[a-zA-Z ]{5,99}" required></label>
+            <label><span>Email:</span><input name="email" type="email" placeholder="email@demo.com"></label>
+            <label><span>Phone:*</span><input name="phonenumber" type="tel" placeholder="2345556789" required></label>
+            <label><span>Zip:*</span><input name="zipcode" type="number" placeholder="84119" required></label>
+            <h3>Storm Information</h3>
+            <label><span>Storm Date:</span><input name="stormdate" type="date"></label>
+            <label><span>Storm Type:</span><input name="stormtype" type="text" list="stormtypes">
+            <datalist id="stormtypes">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+            </datalist></label>
+            <label><span>Storm Severity:</span><input name="stormseverity" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
+            <label><span>Storm Region:</span><select name="stormregion">
+            <option value="selectregion..." disabled selected>Select Region ...</option>
+            <option value="franklin">Franklin</option>
+            <option value="greenville">Greenville</option>
+            <option value="springfield">Springfield</option></select></label>
+            <span id="label">User In-Danger:</span>
+            <label><input name="userindanger" type="radio" value="Yes">Yes</label>
+            <label><input name="userindanger" type="radio" value="Maybe">Maybe</label>
+            <label><input name="userindanger" type="radio" value="No">No</label>
+            <label><span>Additional Information or Comments:</span>
+            <textarea name="additionalinformationorcomments" rows="10" cols="30"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" class="submitbutton">
+        <input name="redirect" type="hidden" value="thanks.html">
+    </form>
+</main>
+
+<!--Footer Here-->
+        <footer>
+            <aside>
+                Contact information: <a href="xxx@xxx.com">contact@weatherforecast.com</a>
+            </aside>
+      
+            <p>&copy; 2018 All Rights Reserved | Your Weather Forecast | <span id="today"></span></p> 
+        </footer>
+            <script src="scripts/currentDate.js" type="text/javascript"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/windchill.js"></script>
+            <script src="scripts/wayfinder.js"></script>
+</body>
+</html>
