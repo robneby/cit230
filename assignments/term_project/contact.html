@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Mountain Spoke, Your Adeventure awaits!!</title>
+<meta name="author" content="Robert Nebeker">
+<meta name="description" content="CIT 230 Class Project-Final. The Mountain Spoke">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> <!-- Google API font reference -->
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> <!-- Google API font reference -->
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google API font reference -->
+<link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+<link href="styles/main.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/adventure.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/contact.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/sales.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/services.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/events.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+    </head>
+
+    <body>
+        <!-- Master Container Div -->
+        <div class="container">
+            <!-- Header Div containing the Logo & Navigation Links -->
+            <header>
+                <div class="logo" id="mountainlogo"></div>
+<nav>
+    <ul class="navigation">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./adventure.html">Adventure</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./sales.html">Sales</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+            </header>
+
+            <h1>Contact us</h1>
+
+
+            <form action="thanks.php" method="post" enctype="multipart/form-data" name="Storm report" id="storm">
+
+
+                <fieldset>
+                    <legend><span>Personal Information</span></legend>
+
+                    <label><span>Full Name:</span> <input name="FullName" type="text" value="" placeholder="First and Last Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label><span>Email:</span> <input name="email" type="email" value="" placeholder="enter email"></label>
+                    <label><span>Phone Number:</span> <input name="Phone" type="tel" value="" placeholder="123-456-7890" pattern="[0-9]{10,20}" required></label>
+                    <label><span>Zip Code:</span> <input name="Zip Code" type="number" value="" placeholder="92121" required></label>
+                </fieldset>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.948738839141!2d-111.09298598477731!3d45.67192937910386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345458559cf66a1%3A0x858c0351ba741919!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+USA!5e0!3m2!1sen!2spe!4v1513229217669" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <fieldset>
+
+                    <legend>Additional Information or Comments</legend>
+
+                    <textarea name="comments" rows="10" cols="30"></textarea>
+                </fieldset>
+
+
+                <input type="submit" value="submit" form="storm" class="submitb">
+
+                <input type="hidden" value="storm data" name="form">
+                <input name="redirect" type="hidden" value="thanks.html">
+
+
+            </form>
+            
+            <footer>
+                <h5>The Mountain Spoke | &copy;2018 All Rights Reserved | 3950 Valley Commons Drive, Bozeman, MT | <span id="currentdate">Current Date Placeholder</span></h5>
+            </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/picturefill.js"></script>
+
+        </div>
+    </body>
+</html>

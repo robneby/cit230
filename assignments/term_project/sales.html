@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Mountain Spoke, Your Adeventure awaits!!</title>
+<meta name="author" content="Robert Nebeker">
+<meta name="description" content="CIT 230 Class Project-Final. The Mountain Spoke">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> <!-- Google API font reference -->
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> <!-- Google API font reference -->
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google API font reference -->
+<link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+<link href="styles/main.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/adventure.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/contact.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/sales.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/services.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/events.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+        <script>
+            $(function() {
+                $("#accordion").accordion();
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Master Container Div -->
+        <div class="container">
+            <!-- Header Div containing the Logo & Navigation Links -->
+            <header>
+                <div class="logo" id="mountainlogo"></div>
+<nav>
+    <ul class="navigation">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./adventure.html">Adventure</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./sales.html">Sales</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+            </header>
+
+            <main>
+
+                <!-- GRID1 -->
+                <h1>The Mountain Spoke: Bikes for Sale</h1>
+                <div id="accordion">
+                    <h3> Paratrooper Pro - $900</h3>
+                        <figure>
+                            <picture>
+                                <img src="images/sales/b5.JPG" alt="Folding Bike" width="220px">
+                                <img src="images/sales/b6.JPG" alt="Folding Bike" width="220px">
+                                <figcaption>
+                                    <p>The Paratrooper Pro is a folding mountain bike that builds on Montagues classic military model with upgraded components.</p>
+                                    <p>Tackle the toughest terrain with 27 speeds and 100mm of suspension travel or utilize the fork lockout and versatile tire tread for hard packed trails and the occasional paved road. The included RackStand acts as a cargo rack, kickstand, folded bike stand, and features a built in mud guard.</p>
+
+                                </figcaption>
+                            </picture>
+                        </figure>
+
+                    <h3>Scott Spark - $1200</h3>
+
+                        <figure>
+                            <picture>
+                                <img src="images/sales/b2.jpg" alt="Scott" width="220px">
+                                <figcaption>
+                                    <p> Scotts Spark 960 boasts a sculpted aluminum frame with 100mm of smooth travel to make every ride awesome. Awesome is the right word with RockShoxs plush suspension fork and an X-Fusion shock taming rough terrain with 100mm of travel. Anywhere you roll, Scott's TwinLoc remote lets you maintain pedaling efficiency with lockout, traction, and descend modes. Quick-rolling 29-inch Syncros wheels spin easily to keep your momentum high, while tacky Maxxis tires grip the trail for excellent control. Plus, you will love the crisp-shifting, 27-speed Shimano drivetrain and powerful Shimano disc brakes that truly make every ride awesome.</p>
+                                    <p>
+                                    -Scott Custom-Butted 6061-Aluminum, 100mm travel w/U-Mono Link142x12mm rear spacing</p> <p>
+                                    -RockShox 30 Silver TK Solo Air, 100mm-travel w/lockout, tapered steerer</p>
+                                </figcaption>
+                            </picture>
+                        </figure>
+
+                    <h3>Mongoose Ledge - $175</h3>
+
+                        <figure>
+                            <picture>
+                                <img src="images/sales/b7.JPG" alt="Mountain Nashbar" width="220px">
+                                <figcaption>Adult and kids can push it to the limit with this 24-inch Mongoose Ledge 2.1 Boys Mountain Bike. This sleek yet rugged bike comes in silver and red for a fun and fierce color combination. The Mongoose mountain bike is lightweight and constructed from an aluminum suspension frame that features a suspension fork for a smooth ride and increased control. In addition, the bike features 21 different speeds to handle a variety of terrains, including up steep hills or just riding around the neighborhood. The shifter three-piece crank helps the bike transition smoothly from one gear to another. The silver/red mountain bike has a number of features, including a padded seat and linear pull brakes that provide strong braking power. 
+                                </figcaption>
+                            </picture>
+                        </figure>
+
+                </div>
+
+            </main>
+
+            <footer>
+                <h5>The Mountain Spoke | &copy;2018 All Rights Reserved | 3950 Valley Commons Drive, Bozeman, MT | <span id="currentdate">Current Date Placeholder</span></h5>
+            </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/windchill.js"></script>
+            <script src="scripts/picturefill.js"></script>
+
+
+        </div>
+    </body>
+</html>

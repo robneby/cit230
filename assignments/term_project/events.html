@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Mountain Spoke, Your Adeventure awaits!!</title>
+<meta name="author" content="Robert Nebeker">
+<meta name="description" content="CIT 230 Class Project-Final. The Mountain Spoke">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> <!-- Google API font reference -->
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> <!-- Google API font reference -->
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> <!-- Google API font reference -->
+<link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+<link href="styles/main.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/sales.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/services.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<link href="styles/events.css" rel="stylesheet" > <!-- default styles - small/phone views -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Master Container Div -->
+        <div class="container">
+            <!-- Header Div containing the Logo & Navigation Links -->
+            <header>
+                <div class="logo" id="mountainlogo"></div>
+<nav>
+    <ul class="navigation">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./adventure.html">Adventure</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./sales.html">Sales</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+            </header>
+
+            <!-- Content Div -->
+            <div class="content">
+                <div class="headImage"></div>
+
+                <h2 class="motto">Cycle the Continental Divide</h2>
+
+                <!-- Content Boxes Container Div -->
+                <div class="contentBoxes">
+                    <!-- BOX 1 -->
+                    <div class="boxes box1">
+
+
+
+                        <h2>Great Divide Mountain Bike Route</h2><br>
+
+                        <p>The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Roughly 80% of it is composed of county, Forest Service (USFS), and Bureau of Land Management (BLM) dirt and gravel roads. The remainder is made up of four-wheel-drive tracks and singletrack trails (10%), and paved roads (10%). </p><br>
+
+                        <p>To celebrate the 20th anniversary of the Great Divide Mountain Bike Route, redesigned maps including bi-directional narratives will be available in June 2018. Current version maps may be purchased now for half price and in May we will email a code to purchase the new maps for $51.50 through July 31, 2018.</p>
+
+
+                    </div>
+                    <!-- BOX 2 -->
+                    <div class="boxes box2">
+
+                        <img src="images/events/great_divide.jpg" style="width:100%">
+
+
+
+                    </div>
+                    <!-- BOX 3 -->
+                    <div class="boxes box3">
+                        <h2>Registration Form</h2>
+
+                        <fieldset>
+                            <legend><span>Register and join us</span></legend>
+
+                            <label><span>Full Name:</span> <input name="FullName" type="text" value="" placeholder="First and Last Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+                            <label><span>Email:</span> <input name="email" type="email" value="" placeholder="enter email"></label>
+                            <label><span>Phone Number:</span> <input name="Phone" type="tel" value="" placeholder="example 123-456-7890" pattern="[0-9]{10,20}" required></label>
+                            <label><span>Zip Code:</span> <input name="Zip Code" type="number" value="" placeholder="example 92020" required></label>
+                            <label><span>Special Accomodations / Comments:</span> <input name="redirect" type="hidden" value="storm data" placeholder="enter comments"></label>
+                            <textarea name="comments" rows="2" cols="25"></textarea>
+                            <input type="submit" value="submit" form="storm" class="submitb">
+                            <input type="hidden" value="storm data" name="form">
+                            <input name="redirect" type="hidden" value="thanks.html">
+                        </fieldset>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <h5>The Mountain Spoke | 	&copy;2018 All Rights Reserved | 3950 Valley Commons Drive, Bozeman, MT | <span id="currentdate">Current Date Placeholder</span></h5>
+            </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/picturefill.js"></script>
+
+        </div>
+    </body>
+</html>
